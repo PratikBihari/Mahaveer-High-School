@@ -17,19 +17,19 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mahavirhighschool.edu.in/">
+    <meta property="og:url" content="https://mahaveerhighschool.gt.tc/">
     <meta property="og:title" content="Mahaveer High School Barimundei | Silver Jubilee Celebration 2026">
     <meta property="og:description" content="Celebrating 25 glorious years of Mahaveer High School, Barimundei, Niali Block, Cuttack. Join us for Silver Jubilee celebration on Jan 18-19, 2026.">
-    <meta property="og:image" content="https://mahavirhighschool.edu.in/Logo.png">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="Mahaveer High School">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mahavirhighschool.edu.in/">
+    <meta property="twitter:url" content="https://mahaveerhighschool.gt.tc/">
     <meta property="twitter:title" content="Mahaveer High School Barimundei | Silver Jubilee Celebration 2026">
     <meta property="twitter:description" content="Celebrating 25 glorious years of Mahaveer High School, Barimundei, Niali Block, Cuttack. Join us for Silver Jubilee celebration on Jan 18-19, 2026.">
-    <meta property="twitter:image" content="https://mahavirhighschool.edu.in/Logo.png">
+    <meta property="twitter:image" content="https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH">
     
     <!-- Geo Tags -->
     <meta name="geo.region" content="IN-OR">
@@ -38,7 +38,7 @@
     <meta name="ICBM" content="20.140786, 86.107751">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://mahavirhighschool.edu.in/">
+    <link rel="canonical" href="https://mahaveerhighschool.gt.tc/">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="Logo.png">
@@ -59,8 +59,8 @@
       "@type": "EducationalOrganization",
       "name": "Mahaveer High School",
       "alternateName": "Mahavir High School Barimundei",
-      "url": "https://mahavirhighschool.edu.in",
-      "logo": "https://mahavirhighschool.edu.in/Logo.png",
+      "url": "https://mahaveerhighschool.gt.tc",
+      "logo": "https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH",
       "description": "Mahaveer High School is a co-educational Odia medium high school in Barimundei, Niali Block, Cuttack, Odisha. Established in 1992, serving grades 8-10.",
       "foundingDate": "1992",
       "address": {
@@ -112,7 +112,7 @@
       "organizer": {
         "@type": "Organization",
         "name": "Mahaveer High School Alumni Association",
-        "url": "https://mahavirhighschool.edu.in"
+        "url": "https://mahaveerhighschool.gt.tc"
       }
     }
     </script>
@@ -134,10 +134,19 @@
         .hero-container {
             position: relative;
             height: 90vh;
+            min-height: 600px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-container {
+                height: auto;
+                min-height: 100vh;
+                padding: 2rem 0;
+            }
         }
 
         .hero-bg {
@@ -198,6 +207,23 @@
             width: 52px;
             height: 52px;
             object-fit: contain;
+        }
+        
+        /* Mobile Navigation Fixes */
+        @media (max-width: 640px) {
+            nav h1 {
+                font-size: 0.875rem !important;
+                line-height: 1.2;
+            }
+            
+            nav .odia-text {
+                font-size: 0.625rem !important;
+            }
+            
+            nav img {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+            }
         }
 
         /* Gradient Backgrounds */
@@ -360,6 +386,44 @@
             border-top: 3px solid transparent;
             border-image: linear-gradient(90deg, #f97316, #fb923c) 1;
         }
+        
+        /* Mobile Optimizations */
+        @media (max-width: 640px) {
+            h1 { font-size: 2.5rem !important; }
+            h2 { font-size: 1.75rem !important; }
+            h3 { font-size: 1.5rem !important; }
+            
+            .stat-card { padding: 1rem !important; }
+            .guest-card { padding: 1rem !important; }
+            .infrastructure-card { padding: 1.5rem !important; }
+            .committee-card { padding: 1rem !important; }
+            
+            .rounded-\[3rem\] { border-radius: 1.5rem !important; }
+            
+            .py-24 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+            .py-16 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+            .p-12 { padding: 2rem !important; }
+            .p-10 { padding: 1.5rem !important; }
+            .p-8 { padding: 1.25rem !important; }
+            
+            .text-6xl { font-size: 2.5rem !important; }
+            .text-5xl { font-size: 2rem !important; }
+            .text-4xl { font-size: 1.75rem !important; }
+            .text-3xl { font-size: 1.5rem !important; }
+            
+            .gap-16 { gap: 2rem !important; }
+            .gap-12 { gap: 1.5rem !important; }
+            .gap-8 { gap: 1rem !important; }
+            
+            .mb-16 { margin-bottom: 2rem !important; }
+            .mb-12 { margin-bottom: 1.5rem !important; }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content { padding: 1rem; }
+            
+            svg { width: 120px !important; height: 120px !important; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900" itemscope itemtype="https://schema.org/WebPage">
@@ -374,19 +438,19 @@
     <!-- Navigation -->
     <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-orange-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center space-x-3">
+            <div class="flex justify-between h-16 sm:h-20 items-center">
+                <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
                     <div class="bg-white p-1 rounded-lg shadow-md border border-orange-50">
                         <!-- School Logo from Google Drive ID -->
-                        <img src="https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH" alt="Mahaveer High School Logo" class="logo-img" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2602/2602414.png'">
+                        <img src="https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH" alt="Mahaveer High School Logo" class="w-10 h-10 sm:w-12 sm:h-12 object-contain" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2602/2602414.png'">
                     </div>
-                    <div>
-                        <h1 class="font-bold text-lg md:text-xl leading-tight text-orange-900 uppercase tracking-tighter">Mahaveer High School</h1>
-                        <p class="text-[10px] text-orange-600 font-bold odia-text">ମହାବୀର ଉଚ୍ଚ ବିଦ୍ୟାଳୟ, ବାରିମୁଣ୍ଡେଇ</p>
+                    <div class="min-w-0">
+                        <h1 class="font-bold text-sm sm:text-lg md:text-xl leading-tight text-orange-900 uppercase tracking-tighter truncate">Mahaveer High School</h1>
+                        <p class="text-[8px] sm:text-[10px] text-orange-600 font-bold odia-text truncate">ମହାବୀର ଉଚ୍ଚ ବିଦ୍ୟାଳୟ, ବାରିମୁଣ୍ଡେଇ</p>
                     </div>
                 </div>
                 
-                <div class="hidden lg:flex space-x-6 font-semibold text-slate-700 text-sm">
+                <div class="hidden lg:flex space-x-6 font-semibold text-slate-700 text-sm items-center">
                     <a href="#home" class="hover:text-orange-600 transition">Home</a>
                     <a href="#about" class="hover:text-orange-600 transition">About</a>
                     <a href="#schedule" class="hover:text-orange-600 transition">Program</a>
@@ -394,9 +458,14 @@
                     <a href="#facilities" class="hover:text-orange-600 transition">Infrastructure</a>
                     <a href="#location" class="hover:text-orange-600 transition">Location</a>
                     <a href="#contact" class="bg-orange-600 text-white px-5 py-2 rounded-full hover:bg-orange-700 transition shadow-md">Contact</a>
+                    <!-- Language Switcher -->
+                    <button onclick="toggleLanguage()" class="flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-600 rounded-full hover:bg-orange-100 transition font-bold">
+                        <i class="fas fa-language"></i>
+                        <span id="langText">ଓଡ଼ିଆ</span>
+                    </button>
                 </div>
 
-                <button class="lg:hidden text-orange-600 text-2xl" onclick="toggleMenu()">
+                <button class="lg:hidden text-orange-600 text-xl sm:text-2xl p-2" onclick="toggleMenu()" aria-label="Toggle menu">
                     <i class="fas fa-bars" id="menuIcon"></i>
                 </button>
             </div>
@@ -410,6 +479,10 @@
             <a href="#guests" class="block py-2 text-slate-700 font-medium">Guests</a>
             <a href="#facilities" class="block py-2 text-slate-700 font-medium">Infrastructure</a>
             <a href="#location" class="block py-2 text-slate-700 font-medium">Location</a>
+            <button onclick="toggleLanguage()" class="w-full text-left py-2 text-orange-600 font-bold flex items-center gap-2">
+                <i class="fas fa-language"></i>
+                <span id="langTextMobile">ଓଡ଼ିଆ</span>
+            </button>
         </div>
     </nav>
 
@@ -423,10 +496,10 @@
                 </div>
                 <h2 class="text-orange-400 font-bold text-3xl md:text-4xl odia-text drop-shadow-lg">ରଜତ ଜୟନ୍ତୀ ସମାରୋହ</h2>
             </div>
-            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-6 leading-tight drop-shadow-2xl">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-extrabold text-white mb-6 leading-tight drop-shadow-2xl">
                 Silver <span class="text-orange-500">Jubilee</span>
             </h1>
-            <p class="text-lg md:text-xl text-orange-50 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+            <p class="text-base sm:text-lg md:text-xl text-orange-50 max-w-2xl mx-auto mb-10 leading-relaxed font-light px-4">
                 Celebrating 25 years of educational brilliance at Barimundei. Managed by the Pvt. Aided sector, serving the community with dedication.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -473,14 +546,21 @@
         <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16 items-center">
             <div class="lg:w-1/2 about-image">
                 <div class="relative rounded-[3rem] overflow-hidden shadow-2xl">
-                    <img src="about.png" alt="Students" class="w-full">
-                    <div class="absolute inset-0 bg-orange-900/10"></div>
+                    <!-- Image Slider -->
+                    <img src="about.png" alt="Mahaveer High School Students" class="about-slide w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover" data-slide="0">
+                    <img src="about2.jpg" alt="Mahaveer High School Campus" class="about-slide w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover hidden" data-slide="1">
+                    <div class="absolute inset-0 bg-orange-900/10 pointer-events-none"></div>
+                    <!-- Slide Indicators -->
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                        <button class="slide-indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white transition-all" data-slide="0"></button>
+                        <button class="slide-indicator w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white/50 transition-all" data-slide="1"></button>
+                    </div>
                 </div>
             </div>
             <div class="lg:w-1/2 about-content">
                 <span class="text-orange-600 font-bold tracking-widest text-sm uppercase">Our Profile</span>
-                <h2 class="text-4xl font-bold text-slate-900 mt-2 mb-6">Mahaveer High School, Barimundei</h2>
-                <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-6">Mahaveer High School, Barimundei</h2>
+                <p class="text-slate-600 leading-relaxed text-base sm:text-lg mb-6">
                     Established in 1992, our school is managed by the Pvt. Aided sector. Located in the rural landscape of Niali Block, Cuttack, we specialize in high school education (Grades 8 to 10). 
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 text-sm font-medium text-slate-700">
@@ -500,7 +580,7 @@
     <section id="schedule" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold section-divider">Program Schedule</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold section-divider">Program Schedule</h2>
                 <p class="text-slate-500 mt-2 font-bold uppercase tracking-widest text-xs">ରଜତ ଜୟନ୍ତୀ ସମାରୋହ</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -539,7 +619,7 @@
     <section id="guests" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold section-divider">Distinguished Guests</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold section-divider">Distinguished Guests</h2>
                 <p class="text-slate-500 mt-2">Dignitaries Grace the Rajat Jayanti Samaroh</p>
             </div>
             
@@ -626,7 +706,7 @@
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold section-divider">25 Years of Excellence</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold section-divider">25 Years of Excellence</h2>
                 <p class="text-slate-500 mt-4 text-lg">Celebrating our journey and achievements</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -714,7 +794,7 @@
     <!-- Detailed Infrastructure -->
     <section id="facilities" class="py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold section-divider text-center mb-16">School Infrastructure</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold section-divider text-center mb-16">School Infrastructure</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Academic Rooms -->
                 <div class="infrastructure-card p-8 rounded-3xl shadow-lg hover-lift">
@@ -772,7 +852,7 @@
     <section id="location" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold section-divider">Find Us</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold section-divider">Find Us</h2>
                 <p class="text-slate-500 mt-4 text-lg">Visit Mahaveer High School, Barimundei</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -798,8 +878,8 @@
                 </div>
                 <!-- Google Map -->
                 <div class="lg:col-span-2">
-                    <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-orange-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568.3313903186802!2d86.10775153121948!3d20.140785648180028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a198526c7a53107%3A0x557aca4045305a9d!2sMahaveer%20High%20School!5e1!3m2!1sen!2sin!4v1768495785096!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-2 sm:border-4 border-orange-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568.3313903186802!2d86.10775153121948!3d20.140785648180028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a198526c7a53107%3A0x557aca4045305a9d!2sMahaveer%20High%20School!5e1!3m2!1sen!2sin!4v1768495785096!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="sm:h-[500px]"></iframe>
                     </div>
                 </div>
             </div>
@@ -812,7 +892,7 @@
             <div class="gradient-orange rounded-[3rem] p-12 shadow-2xl mb-24 relative overflow-hidden">
                 <div class="decorative-circle" style="width: 300px; height: 300px; top: -100px; right: -100px;"></div>
                 <div class="decorative-circle" style="width: 200px; height: 200px; bottom: -50px; left: -50px;"></div>
-                <h2 class="text-3xl font-bold text-center mb-12 text-white relative z-10">Silver Jubilee Organizing Committee</h2>
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-white relative z-10">Silver Jubilee Organizing Committee</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center">
                     <div class="committee-card">
                         <h4 class="font-bold text-sm text-white">Shri Indramani Swain</h4>
@@ -834,7 +914,7 @@
                     <div class="bg-white p-1 rounded-lg">
                         <img src="https://lh3.googleusercontent.com/d/11k0Y47iklyFLaAEgwn0fu-3akDGr9_NH" alt="Mahaveer High School Logo" class="w-12 h-12 object-contain" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2602/2602414.png'">
                     </div>
-                    <h3 class="font-bold text-xl uppercase tracking-widest text-white">Mahaveer High School</h3>
+                    <h3 class="font-bold text-lg sm:text-xl uppercase tracking-widest text-white">Mahaveer High School</h3>
                 </div>
                 <p class="text-slate-400 text-sm">Barimundei, Niali Block, Cuttack, Odisha | PIN: 754004</p>
                 <p class="text-slate-500 text-xs mt-2 uppercase tracking-tighter">Managed by Pvt. Aided • Established 1992 • Odia Medium</p>
@@ -844,11 +924,106 @@
                     <a href="#" class="hover:text-orange-500 transition-all text-2xl hover:scale-125"><i class="fas fa-map-marker-alt"></i></a>
                 </div>
                 <p class="text-[9px] text-slate-500 font-bold uppercase tracking-widest">&copy; 2026 Mahaveer High School Silver Jubilee Celebration. All Rights Reserved.</p>
+                <p class="text-[10px] text-slate-600 mt-3">Designed and Developed by <span class="text-orange-500 font-semibold">Pratik Bihari</span></p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Current language state
+        let currentLang = 'en';
+        
+        // Translation dictionary
+        const translations = {
+            en: {
+                home: 'Home',
+                about: 'About',
+                program: 'Program',
+                guests: 'Guests',
+                infrastructure: 'Infrastructure',
+                location: 'Location',
+                contact: 'Contact',
+                langBtn: 'ଓଡ଼ିଆ',
+                heroTitle: 'Silver Jubilee',
+                heroDesc: 'Celebrating 25 years of educational brilliance at Barimundei. Managed by the Pvt. Aided sector, serving the community with dedication.',
+                viewSchedule: 'View Schedule',
+                learnMore: 'Learn More',
+                ourProfile: 'Our Profile',
+                aboutTitle: 'Mahaveer High School, Barimundei',
+                aboutDesc: 'Established in 1992, our school is managed by the Pvt. Aided sector. Located in the rural landscape of Niali Block, Cuttack, we specialize in high school education (Grades 8 to 10).',
+                programSchedule: 'Program Schedule',
+                distinguishedGuests: 'Distinguished Guests',
+                guestsDesc: 'Dignitaries Grace the Rajat Jayanti Samaroh',
+                schoolInfra: 'School Infrastructure',
+                findUs: 'Find Us',
+                visitSchool: 'Visit Mahaveer High School, Barimundei',
+                address: 'Address',
+                howToReach: 'How to Reach',
+                reachDesc: 'Located in Niali Block with all-weather road access. Easily accessible from Cuttack and nearby areas.',
+                committee: 'Silver Jubilee Organizing Committee',
+                president: 'President, Alumni Association',
+                secretary: 'Secretary, Alumni Association',
+                headmaster: 'Headmaster',
+                copyright: '© 2026 Mahaveer High School Silver Jubilee Celebration. All Rights Reserved.'
+            },
+            or: {
+                home: 'ଘର',
+                about: 'ଆମ ବିଷୟରେ',
+                program: 'କାର୍ଯ୍ୟକ୍ରମ',
+                guests: 'ଅତିଥି',
+                infrastructure: 'ଅବସଂରଚନା',
+                location: 'ସ୍ଥାନ',
+                contact: 'ଯୋଗାଯୋଗ',
+                langBtn: 'English',
+                heroTitle: 'ରଜତ ଜୟନ୍ତୀ',
+                heroDesc: 'ବାରିମୁଣ୍ଡେଇରେ ଶୈକ୍ଷିକ ଉତ୍କୃଷ୍ଟତାର 25 ବର୍ଷ ଉଦଯାପନ କରୁଛୁ। ନିଜସ୍ୱ ସହାୟତା ପ୍ରାପ୍ତ କ୍ଷେତ୍ର ଦ୍ୱାରା ପରିଚାଳିତ, ସମୁଦାୟକୁ ସମର୍ପଣ ସହିତ ସେବା କରୁଛି।',
+                viewSchedule: 'ସମୟସୂଚୀ ଦେଖନ୍ତୁ',
+                learnMore: 'ଅଧିକ ଜାଣନ୍ତୁ',
+                ourProfile: 'ଆମର ପରିଚୟ',
+                aboutTitle: 'ମହାବୀର ଉଚ୍ଚ ବିଦ୍ୟାଳୟ, ବାରିମୁଣ୍ଡେଇ',
+                aboutDesc: '1992 ରେ ସ୍ଥାପିତ, ଆମ ବିଦ୍ୟାଳୟ ନିଜସ୍ୱ ସହାୟତା ପ୍ରାପ୍ତ କ୍ଷେତ୍ର ଦ୍ୱାରା ପରିଚାଳିତ। ନିଆଳୀ ବ୍ଲକ୍, କଟକର ଗ୍ରାମାଞ୍ଚଳରେ ଅବସ୍ଥିତ, ଆମେ ଉଚ୍ଚ ବିଦ୍ୟାଳୟ ଶିକ୍ଷାରେ (ଶ୍ରେଣୀ 8 ରୁ 10) ବିଶେଷଜ୍ଞ।',
+                programSchedule: 'କାର୍ଯ୍ୟକ୍ରମ ସମୟସୂଚୀ',
+                distinguishedGuests: 'ବିଶିଷ୍ଟ ଅତିଥିମାନେ',
+                guestsDesc: 'ରଜତ ଜୟନ୍ତୀ ସମାରୋହକୁ ଶୋଭାଯମାନ ଗଣ୍ୟମାନ୍ୟ ଅତିଥି',
+                schoolInfra: 'ବିଦ୍ୟାଳୟ ଅବସଂରଚନା',
+                findUs: 'ଆମକୁ ଖୋଜନ୍ତୁ',
+                visitSchool: 'ମହାବୀର ଉଚ୍ଚ ବିଦ୍ୟାଳୟ, ବାରିମୁଣ୍ଡେଇକୁ ଆସନ୍ତୁ',
+                address: 'ଠିକଣା',
+                howToReach: 'କେମିତି ପହଁଚିବେ',
+                reachDesc: 'ନିଆଳୀ ବ୍ଲକ୍ରେ ଅବସ୍ଥିତ, ସବୁ ମୟସମରେ ସଡ଼କ ସୁବିଧା ସହିତ। କଟକ ଓ ଆଶପାଶ ଅଞ୍ଚଳରୁ ସହଜରେ ପହଁଚିବା ଯୋଗ୍ୟ।',
+                committee: 'ରଜତ ଜୟନ୍ତୀ ଆୟୋଜନ ସମିତି',
+                president: 'ସଭାପତି, ପୂର୍ବତନ ଛାତ୍ର ସଂଘ',
+                secretary: 'ସଚିବ, ପୂର୍ବତନ ଛାତ୍ର ସଂଘ',
+                headmaster: 'ପ୍ରଧାନ ଶିକ୍ଷକ',
+                copyright: '© 2026 ମହାବୀର ଉଚ୍ଚ ବିଦ୍ୟାଳୟ ରଜତ ଜୟନ୍ତୀ ଉଦଯାପନ। ସମସ୍ତ ଅଧିକାର ସୁରକ୍ଷିତ।'
+            }
+        };
+        
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'or' : 'en';
+            updateContent();
+        }
+        
+        function updateContent() {
+            const t = translations[currentLang];
+            
+            // Update language button
+            document.getElementById('langText').textContent = t.langBtn;
+            document.getElementById('langTextMobile').textContent = t.langBtn;
+            
+            // Update navigation
+            document.querySelectorAll('a[href="#home"]').forEach(el => el.textContent = t.home);
+            document.querySelectorAll('a[href="#about"]').forEach(el => el.textContent = t.about);
+            document.querySelectorAll('a[href="#schedule"]').forEach(el => el.textContent = t.program);
+            document.querySelectorAll('a[href="#guests"]').forEach(el => el.textContent = t.guests);
+            document.querySelectorAll('a[href="#facilities"]').forEach(el => el.textContent = t.infrastructure);
+            document.querySelectorAll('a[href="#location"]').forEach(el => el.textContent = t.location);
+            document.querySelectorAll('a[href="#contact"]').forEach(el => el.textContent = t.contact);
+            
+            // Store translations in data attributes for easy access
+            document.documentElement.lang = currentLang === 'en' ? 'en' : 'or';
+        }
+        
         function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
             const icon = document.getElementById('menuIcon');
@@ -863,6 +1038,49 @@
                 document.getElementById('menuIcon').classList.replace('fa-times', 'fa-bars');
             });
         });
+
+        // About Section Image Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.about-slide');
+        const indicators = document.querySelectorAll('.slide-indicator');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('hidden');
+                } else {
+                    slide.classList.add('hidden');
+                }
+            });
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.remove('bg-white/50');
+                    indicator.classList.add('bg-white');
+                } else {
+                    indicator.classList.remove('bg-white');
+                    indicator.classList.add('bg-white/50');
+                }
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // Auto slide every 4 seconds
+        setInterval(nextSlide, 4000);
+        
+        // Manual slide control
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+        
+        // Initialize first slide
+        showSlide(0);
     </script>
 </body>
 </html>
